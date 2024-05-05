@@ -1,0 +1,81 @@
+* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary: #e5eefd;
+    --secondary: #82b0f2;
+    --terciary: #3b43a1;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-terciary: #5d5d5d;
+}
+body {
+    font-family: Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--secondary) 0%, var(--terciary) 50%, #003366 100%);
+}
+
+.container{   
+    background: linear-gradient(to bottom, var(--primary) 40%, var(--secondary) 50%);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 520px;
+    width: 400px;   
+    max-width: 100%;
+}
+
+.login-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-container input{
+margin-bottom: 10px; 
+border-radius: 20px !important;   
+}
+
+#logo-container img {    
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; 
+    
+}
+
+#paragrafo-cadastro{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bolder;  
+}
+
+button{
+    width: 180px;
+    background-color: var(--terciary) !important;
+    border-radius: 20px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+button:hover {
+    opacity: 0.9 !important;
+    border-color: #fff !important;
+}
+
+@media (max-width: 450px) {
+    .logo-container img {
+        max-height: 80px;                 
+    }
+
+    button{
+        width: 150px;
+    }
+}
